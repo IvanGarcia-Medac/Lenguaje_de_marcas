@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario de curriculum</h1>
+
+    <form action="proceso.php" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Apellidos: <input type="text" name="apellidos"></p>
+            <p>Edad: <input type="number" name="edad"></p>
+
+            <P>Genero</P>
+            <p>Hombre <input type="radio" name="sexo" >
+               Mujer <input type="radio" name="sexo">
+            </p>
+
+        </fieldset>
+        <fieldset>
+            <legend>Contacto</legend>
+            <p>Correo electronico: <input type="text" name="correo"></p>
+            <p>Codigo postal: <input type="text" name="CodigoPost"></p>
+            <p>Direccion: <input type="text" name="direccion"></p>
+           <p>Ciudad
+            <select name="opciones" >
+
+                <option value="1">Jaen</option>
+                <option value="2">Sevilla</option>
+                <option value="3">Granada</option>
+                <option value="4">Malaga</option>
+            </select>
+        </p>
+        <p>Contraseña <input type="password" name="contraseña"></p>
+
+        </fieldset>
+        <fieldset>
+
+            <legend>Datos de interes</legend>
+            <p>Estado civil</p>
+            <p>Casado <input type="radio" name="casado">
+              No casado <input type="radio" name="casado"></p>
+
+            <p>Hobbies</p>
+            <p>Deporte <input type="checkbox"><br>
+                Cine <input type="checkbox"><br>
+                Lectura <input type="checkbox"><br>
+                Center <input type="checkbox"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios adicionales</legend>
+            <p>Escriba aqui tus comentarios</p>
+            <textarea rows="5" cols="30">Introduzca sus comentarios aqui</textarea>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Resetear">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+</body>
+</html>
